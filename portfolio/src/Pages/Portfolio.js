@@ -1,5 +1,5 @@
 // src/Pages/Home.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import HeroSection from './HeroSection';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
@@ -11,41 +11,63 @@ import SideBar from './SideBar';
 
 const Portfolio = () => {
 
+  // Create references for each section
+  const aboutMeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const servicesRef = useRef(null);
+  const contactUsRef = useRef(null);
+  const footerRef = useRef(null);
+
+  
+  const handleMove = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   
   return (
     <>
-    <div className='hidden sms:flex mds:flex lgs:flex'>
-       <SideBar/>
-    </div>
-    <div className='flex-grow overflow-hidden'>
-      <HeroSection/>
-      <div className='h screen'>
-        <AboutMe/>
-      </div>
-      < div className='h screen'>
-     <Projects/>
-      </div>
-      <div className='h screen'>
-        <Skills/>
-      </div>
-      <div className='h screen'>
-        <Services/>
-      </div>
-      <div className='h screen'>
-        <ContactUs/>
-      </div>
-      <div className='h screen'>
-        <Footer/>
+      {/* Sidebar */}
+      <div className='hidden sms:flex mds:flex lgs:flex'>
+        <SideBar 
+          onNavigate={handleMove}
+          
+          aboutMeRef={aboutMeRef}
+          projectsRef={projectsRef}
+          skillsRef={skillsRef}
+          servicesRef={servicesRef}
+          contactUsRef={contactUsRef}
+          
+        />
       </div>
 
-    </div>
-
+      {/* Main Content */}
+      <div className='flex-grow overflow-hidden'>
+        <HeroSection/>
+        <div className='h screen' ref={aboutMeRef} >
+          <AboutMe/>
+        </div>
+        <div className='h screen' ref={projectsRef}>
+          <Projects/>
+        </div>
+        <div className='h screen' ref={skillsRef}>
+          <Skills/>
+        </div>
+        <div className='h screen' ref={servicesRef}>
+          <Services/>
+        </div>
+        <div className='h screen' ref={contactUsRef}>
+          <ContactUs/>
+        </div>
+        <div className='h screen' ref={footerRef}>
+          <Footer/>
+        </div>
+      </div>
     </>
   );
 };
 
 export default Portfolio;
-

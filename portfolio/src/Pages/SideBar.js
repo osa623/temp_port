@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import namelogo from '../assests/logo_1.png';
 
 
-const SideBar = () => {
+const SideBar = ({ onNavigate, aboutMeRef, projectsRef, skillsRef, servicesRef, contactUsRef}) => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -19,17 +19,20 @@ const SideBar = () => {
       </div>
       <ul className="hidden md:flex lgs:flex  items-center font-dmsans justify-center text-primary text-xl cursor-pointer lgs:w-[60vw]">
         {/* Use Link component for routing */}
-        <li className="p-4 hover:text-baseprimary mds:text-sm focus:text-baseprimary">
-          <Link to="/" className=''>About Me</Link>
+        <li onClick={() => onNavigate(aboutMeRef)} className="p-4 hover:text-baseprimary mds:text-sm focus:text-baseprimary">
+          About Me
         </li>
-        <li className="p-4 hover:text-baseprimary mds:text-sm focus:text-baseprimary">
-          <Link to="/reviews">Projects</Link>
+        <li onClick={() => onNavigate(projectsRef)} className="p-4 hover:text-baseprimary mds:text-sm focus:text-baseprimary">
+          Projects
         </li>
-        <li className="p-4 hover:text-baseprimary mds:text-sm">
-          <Link to="/articles">Skills</Link>
+        <li onClick={() => onNavigate(skillsRef)} className="p-4 hover:text-baseprimary mds:text-sm">
+          Skills
         </li>
-        <li className="p-4 hover:text-baseprimary mds:text-sm">
-          <Link to="/about">Contact Me</Link>
+        <li onClick={() => onNavigate(servicesRef)} className="p-4 hover:text-baseprimary mds:text-sm">
+          Services
+        </li>
+        <li onClick={() => onNavigate(contactUsRef)} className="p-4 hover:text-baseprimary mds:text-sm">
+          Contact Me
         </li>
       </ul>
       <div className="flex items-center lgs:w-[20vw] mds:w-[20vw]"/>
@@ -48,17 +51,20 @@ const SideBar = () => {
                       <img src={namelogo} alt="bwlogo" className="h-16 w-auto m-4" />
                     </div>
                     {/* Use Link component for mobile navigation */}
-                    <li className="p-4 border-b border-gray-600 text-center">
-                      <Link to="/" onClick={handleNav}>About Me</Link>
+                    <li onClick={() => onNavigate(aboutMeRef)} className="p-4 border-b border-gray-600 text-center">
+                     About Me
                     </li>
-                    <li className="p-4 border-b border-gray-600 text-center">
-                      <Link to="/reviews" onClick={handleNav}>Projects</Link>
+                    <li onClick={() => onNavigate(projectsRef)} className="p-4 border-b border-gray-600 text-center">
+                      Projects
                     </li>
-                    <li className="p-4 border-b border-gray-600 text-center">
-                      <Link to="/articles" onClick={handleNav}>Skills</Link>
+                    <li onClick={() => onNavigate(skillsRef)} className="p-4 border-b border-gray-600 text-center">
+                      Skills
                     </li>
-                    <li className="p-4 border-b border-gray-600 text-center">
-                      <Link to="/about" onClick={handleNav}>Contact Me</Link>
+                    <li onClick={() => onNavigate(servicesRef)} className="p-4 border-b border-gray-600 text-center">
+                      Services
+                    </li>
+                    <li onClick={() => onNavigate(contactUsRef)} className="p-4 border-b border-gray-600 text-center">
+                      Contact Me
                     </li>
                   </ul>
               </div>
