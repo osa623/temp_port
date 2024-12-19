@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vu_ROW9.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_gPq_ROW9.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW9.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_7Pq_ROW9.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_Of2_ROW9.ttf) format('truetype');
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .mod {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    background: transparent;
+  }
+  
+  .mod .project-name {
+    position: absolute;
+    width: 420px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+  }
+  
+  .mod .cube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -105px;
+    margin-left: -105px;
+    width: 210px;
+    height: 210px;
+    transform-style: preserve-3d;
+    transform-origin: 105px 105px;
+    animation: spinCube 9000ms linear infinite;
+  }
+  
+  .mod .cube .face {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    transform-origin: center;
+  }
+  
+  .mod .cube .f1 { transform: rotateY(0deg) translateZ(105px); }
+  .mod .cube .f2 { transform: rotateY(90deg) translateZ(105px); }
+  .mod .cube .f3 { transform: rotateY(180deg) translateZ(105px); }
+  .mod .cube .f4 { transform: rotateY(-90deg) translateZ(105px); }
+  .mod .cube .f5 { transform: rotateX(90deg) translateZ(105px); }
+  .mod .cube .f6 { transform: rotateX(-90deg) translateZ(105px); }
+  
+  .mod .cube .dot {
+    position: absolute;
+    background: #ffffff;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+  }
+  
+  /* Positioning dots on different faces */
+  .dot.p1 { top: 5%; left: 5%; }
+  .dot.p2 { top: 10%; left: 10%; }
+  .dot.p3 { top: 15%; left: 15%; }
+  .dot.p4 { top: 20%; left: 20%; }
+  .dot.p5 { top: 25%; left: 25%; }
+  .dot.p6 { top: 30%; left: 30%; }
+  .dot.p7 { top: 35%; left: 35%; }
+  .dot.p8 { top: 40%; left: 40%; }
+  .dot.p9 { top: 45%; left: 45%; }
+  .dot.p10 { top: 50%; left: 50%; }
+  .dot.p11 { top: 55%; left: 55%; }
+  .dot.p12 { top: 60%; left: 60%; }
+  .dot.p13 { top: 65%; left: 65%; }
+  .dot.p14 { top: 70%; left: 70%; }
+  .dot.p15 { top: 75%; left: 75%; }
+  .dot.p16 { top: 80%; left: 80%; }
+  .dot.p17 { top: 85%; left: 85%; }
+  .dot.p18 { top: 90%; left: 90%; }
+  .dot.p19 { top: 95%; left: 95%; }
+  .dot.p20 { top: 5%; left: 10%; }
+  .dot.p21 { top: 10%; left: 15%; }
+  .dot.p22 { top: 15%; left: 20%; }
+  .dot.p23 { top: 20%; left: 25%; }
+  .dot.p24 { top: 25%; left: 30%; }
+  .dot.p25 { top: 30%; left: 35%; }
+  .dot.p26 { top: 35%; left: 40%; }
+  .dot.p27 { top: 40%; left: 45%; }
+  .dot.p28 { top: 45%; left: 50%; }
+  .dot.p29 { top: 50%; left: 55%; }
+  .dot.p30 { top: 55%; left: 60%; }
+  .dot.p31 { top: 60%; left: 65%; }
+  .dot.p32 { top: 65%; left: 70%; }
+  .dot.p33 { top: 70%; left: 75%; }
+  .dot.p34 { top: 75%; left: 80%; }
+  .dot.p35 { top: 80%; left: 85%; }
+  .dot.p36 { top: 85%; left: 90%; }
+  .dot.p37 { top: 90%; left: 95%; }
+  .dot.p38 { top: 95%; left: 5%; }
+  .dot.p39 { top: 5%; left: 95%; }
+  .dot.p40 { top: 10%; left: 20%; }
+  .dot.p41 { top: 15%; left: 25%; }
+  .dot.p42 { top: 20%; left: 30%; }
+  .dot.p43 { top: 25%; left: 35%; }
+  .dot.p44 { top: 30%; left: 40%; }
+  .dot.p45 { top: 35%; left: 45%; }
+  .dot.p46 { top: 40%; left: 50%; }
+  .dot.p47 { top: 45%; left: 55%; }
+  .dot.p48 { top: 50%; left: 60%; }
+  .dot.p49 { top: 55%; left: 65%; }
+  .dot.p50 { top: 60%; left: 70%; }
+  .dot.p51 { top: 65%; left: 75%; }
+  .dot.p52 { top: 70%; left: 80%; }
+  .dot.p53 { top: 75%; left: 85%; }
+  .dot.p54 { top: 80%; left: 90%; }
+  .dot.p55 { top: 85%; left: 95%; }
+  .dot.p56 { top: 90%; left: 5%; }
+  .dot.p57 { top: 95%; left: 10%; }
+  .dot.p58 { top: 5%; left: 15%; }
+  .dot.p59 { top: 10%; left: 25%; }
+  .dot.p60 { top: 15%; left: 35%; }
+  .dot.p61 { top: 20%; left: 45%; }
+  .dot.p62 { top: 25%; left: 55%; }
+  .dot.p63 { top: 30%; left: 65%; }
+  .dot.p64 { top: 35%; left: 75%; }
+  .dot.p65 { top: 40%; left: 85%; }
+  .dot.p66 { top: 45%; left: 95%; }
+  .dot.p67 { top: 50%; left: 10%; }
+  .dot.p68 { top: 55%; left: 20%; }
+  .dot.p69 { top: 60%; left: 30%; }
+  .dot.p70 { top: 65%; left: 40%; }
+  .dot.p71 { top: 70%; left: 50%; }
+  .dot.p72 { top: 75%; left: 60%; }
+  .dot.p73 { top: 80%; left: 70%; }
+  .dot.p74 { top: 85%; left: 80%; }
+  .dot.p75 { top: 90%; left: 90%; }
+  .dot.p76 { top: 95%; left: 15%; }
+  .dot.p77 { top: 5%; left: 25%; }
+  .dot.p78 { top: 10%; left: 35%; }
+  .dot.p79 { top: 15%; left: 45%; }
+  .dot.p80 { top: 20%; left: 55%; }
+  .dot.p81 { top: 25%; left: 65%; }
+  .dot.p82 { top: 30%; left: 75%; }
+  .dot.p83 { top: 35%; left: 85%; }
+  .dot.p84 { top: 40%; left: 95%; }
+  .dot.p85 { top: 45%; left: 10%; }
+  
+  /* Add animations */
+  @keyframes spinCube {
+    0% {
+      transform: rotateY(0deg) rotateX(0deg) rotate(0deg);
+    }
+    50% {
+      transform: rotateY(180deg) rotateX(180deg) rotate(180deg);
+    }
+    100% {
+      transform: rotateY(360deg) rotateX(360deg) rotate(360deg);
+    }
+  }
+  

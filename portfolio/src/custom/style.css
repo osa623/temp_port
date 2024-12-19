@@ -1,0 +1,23 @@
+.hover-effect {
+  @apply relative border-2 border-gray-700 rounded-xl text-gray-600 cursor-pointer flex justify-center items-center w-40 h-10 transition-transform duration-200 ease-in-out overflow-hidden;
+}
+
+.hover-effect::after {
+  @apply absolute top-0 left-0 w-full h-full bg-gray-800 rounded-xl;
+  content: '';
+  transform: translate(-100%, 0) rotate(20deg);
+  transform-origin: top left;
+  transition: transform 0.2s ease-out;
+}
+
+.hover-effect:hover::after {
+  transform: translate(0, 0);
+}
+
+.hover-effect:hover {
+  @apply border-transparent text-primary font-bold scale-125;
+}
+
+.hover-effect-text {
+  @apply relative z-10; /* Ensure the text is above the background overlay */
+}

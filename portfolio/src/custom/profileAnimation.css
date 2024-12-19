@@ -1,0 +1,145 @@
+
+  
+  .paces {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    padding-top: 100%;
+  }
+  
+  .pace {
+    font-size: 90%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5em;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 60%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all ease-in-out 0.2s;
+  }
+  
+  .pace .quote {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pace:hover,
+  .pace:focus,
+  .pace:active {
+    cursor: grabbing;
+    background-color: #111;
+    color: #111;
+    animation: none !important;
+  }
+  
+  .pace:hover .quote,
+  .pace:focus .quote,
+  .pace:active .quote {
+    color: #fff;
+    hyphens: auto;
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .pace.js {
+    margin: 2%;
+    font-size: 1ch;
+    animation: 5.5s infinite linear rotate;
+    box-shadow: 0 0 5em #fff;
+  }
+  
+  .pace.css {
+    margin: 10%;
+    font-size: 1ch;
+    animation: 7.5s infinite linear rotate;
+  }
+  
+  .pace.html {
+    margin: 15%;
+    font-size: 1ch;
+    animation: 10.5s infinite linear rotate;
+  }
+  
+  .pace.url {
+    margin: 20%;
+    font-size: 1ch;
+    animation: 16.5s infinite linear rotate;
+  }
+  
+  .pace.http {
+    margin: 25%;
+    font-size: 1ch;
+    animation: 25.5s infinite linear rotate;
+  }
+  
+  .pace.tcpip {
+    margin: 30%;
+    font-size: 1ch;
+    animation: 40s infinite linear rotate;
+  }
+  
+  .quote.js {
+    padding: 10%;
+  }
+  
+  .quote.css {
+    padding: 5%;
+  }
+  
+  .quote.html {
+    padding: 4%;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #111;
+    transform: translateY(-50%);
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: -2em;
+    margin-right: -2em;
+    box-shadow: 0 -1em 1em #111;
+  }
+  
+  footer a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  footer a:hover,
+  footer a:focus,
+  footer a:active {
+    color: #fff;
+  }
+  
+  .quotes .quote {
+    opacity: 0;
+  }
+  
+  .quotes .quote:target {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
