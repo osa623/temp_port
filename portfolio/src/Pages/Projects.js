@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
@@ -13,6 +13,7 @@ import medilink from '../assests/Projects/MediLink.png';
 import fitnessMaster from '../assests/Projects/fitnessMaster.png';
 import jobPortal from '../assests/Projects/jobFinder.png';
 import pathFinder from '../assests/Projects/pathFinder.png';
+import payCue from '../assests/Projects/payCue.png';
 
 //logos
 import bwlogo from '../assests/mobile Apps/bwlogo.png';
@@ -22,6 +23,7 @@ import medilinklogo from '../assests/mobile Apps/medilink.png';
 import fitnessMasterLogo from '../assests/mobile Apps/Fitness Master.png';
 import jobPortalLogo from '../assests/mobile Apps/Job Portal.png';
 import pathFinderLogo from '../assests/mobile Apps/pathFinderLogo.png';
+import paycuelogo from '../assests/mobile Apps/paycue.png';
 
 
 //font awesome icons
@@ -136,15 +138,15 @@ const projects02 = [
     },
     {
       id: 4,
-      name: "MediLink",
-      description: "A convenient medical appointment booking platform for patients.",
-      image: medilink,
-      logo: medilinklogo,
-      gradient: "from-blue-600 to-transparent",
-      border: "border-blue-400",
-      gradientOverlay: "from-blue-600 via-blue-600 to-transparent",
-      buttonBg: "bg-blue-600",
-      buttonBorder: "border-blue-400",
+      name: "PayCue",
+      description: "PayCue keeps you on track with bill reminders and receipt storage. Never miss a due date!.",
+      image: payCue,
+      logo: paycuelogo,
+      gradient: "from-purple-900 to-transparent",
+      border: "border-purple-400",
+      gradientOverlay: "from-purple-900 via-purple-900 to-transparent",
+      buttonBg: "bg-purple-900 ",
+      buttonBorder: "border-purple-400",
       buttonText: "See More",
     },
   ];

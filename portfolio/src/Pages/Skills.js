@@ -75,14 +75,16 @@ const Skills = () => {
       { threshold: 0.7 }
     );
 
+    const dop = sectionRef.current;
+
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
 
     // Cleanup observer when component is unmounted
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (dop) {
+        observer.unobserve(dop);
       }
     };
   }, []);

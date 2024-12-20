@@ -11,9 +11,9 @@ import { faConnectdevelop, faReadme } from '@fortawesome/free-brands-svg-icons';
 
 const AboutMe = () => {
   return (
-    <section id='' className='relative flex-col flex bg-gray-800 lgs:h-[30rem] mds:h-[75rem] lgs:w-[100vw]'>
+    <section  className='relative flex-col flex bg-gray-800 lgs:h-[40rem] mds:h-[75rem] lgs:w-[100vw]'>
 
-        <div className='flex  bg-gray-800 mds:w-[100vw] mds:h-[2.5rem] lgs:h-[20rem] lgs:w-[100vw] sms:h-[2rem] sms:w-[100vw]'/>
+        <div className='flex  bg-gray-800 mds:w-[100vw] mds:h-[2.5rem] lgs:h-[30rem] lgs:w-[100vw] sms:h-[2rem] sms:w-[100vw]'/>
             
           
 
