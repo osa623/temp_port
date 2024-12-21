@@ -185,7 +185,7 @@ const projects02 = [
             style={{
               boxShadow: "1px 5px 20px rgba(0,0,0,0.7)",
             }}
-          >
+             data-aos='fade-up' data-aos-delay='400'>
             <div className="flex bg-transparent lgs:h-[30rem] sms:h-[15rem] sms:w-[100vw] lgs:w-full">
               <div
                 className={`flex flex-col lgs:bg-gradient-to-b ${tool.gradient} overflow-hidden lgs:rounded-br-full items-center sms:h-[15rem] sms:rounded-br-full  border-r-8 ${tool.border} lgs:h-full sms:w-[50vw] lgs:w-[20rem]`}
@@ -259,7 +259,7 @@ const projects02 = [
                   style={{
                     boxShadow: "1px 5px 20px rgba(0,0,0,0.7)",
                   }}
-                >
+                  data-aos='fade-up' data-aos-delay='400'>
                   <div className="flex bg-transparent  h-[20rem] w-[80vw]">
                     <div
                       className={`flex flex-col lgs:bg-gradient-to-b ${tool.gradient} overflow-hidden lgs:rounded-br-full items-center h-[20rem] rounded-br-full  border-r-8 ${tool.border} w-[50vw]`}
@@ -332,8 +332,7 @@ const projects02 = [
 
     <div className='flex bg-transparent w-full h-[5rem]'/>
 
-    <div
-        className={`flex sms:flex-col lgs:grid-cols-4 lgs:gap-12 sms:gap-6 mds:gap-4 sms:grid-cols-1 mds:flex-col  items-center bg-transparent justify-center lgs:h-auto w-full transform transition-all duration-500  ${
+    <div className={`flex sms:flex-col lgs:grid-cols-4 lgs:gap-12 sms:gap-6 mds:gap-4 sms:grid-cols-1 mds:flex-col  items-center bg-transparent justify-center lgs:h-auto w-full transform transition-all duration-500  ${
           showSecondSection ? 'lgs:h-auto lgs:pt-4 lgs:pb-8 mds:pb-8 opacity-100' : 'max-h-0 opacity-0'
         } overflow-hidden`}
       >
@@ -347,7 +346,7 @@ const projects02 = [
                 style={{
                   boxShadow: "1px 5px 20px rgba(0,0,0,0.7)",
                 }}
-              >
+                data-aos='fade-up' data-aos-delay='400'>
                 <div className="flex bg-transparent lgs:h-[30rem] sms:h-[15rem] sms:w-[100vw] lgs:w-full">
                   <div
                     className={`flex flex-col bg-gradient-to-b ${tool.gradient} overflow-hidden lgs:rounded-br-full items-center sms:h-[15rem] sms:rounded-br-full  border-r-8 ${tool.border} lgs:h-full sms:w-[50vw] lgs:w-[20rem]`}
@@ -419,7 +418,7 @@ const projects02 = [
                   style={{
                     boxShadow: "1px 5px 20px rgba(0,0,0,0.7)",
                   }}
-                >
+                  data-aos='fade-up' data-aos-delay='400'>
                   <div className="flex bg-transparent  h-[20rem] w-[80vw]">
                     <div
                       className={`flex flex-col lgs:bg-gradient-to-b ${tool.gradient} overflow-hidden lgs:rounded-br-full items-center h-[20rem] rounded-br-full  border-r-8 ${tool.border} w-[50vw]`}

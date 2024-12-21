@@ -121,7 +121,7 @@ const Skills = () => {
 
         <div className='flex sms:flex-col mds:flex-col h-auto w-auto sms:items-center mds:items-center'>
 
-        <div className='flex h-auto lgs:w-[20vw] mds:w-full justify-center items-center'>
+        <div className='flex h-auto lgs:w-[20vw] mds:w-full justify-center items-center' data-aos='fade-right' data-aos-delay='400'>
             <h2 className='font-dmsans text-6xl sms:text-5xl text-center text-gray-300 lgs:-rotate-90'>
                    TECHNOLOGIES FRAMEWORKS
             </h2>
@@ -142,7 +142,7 @@ const Skills = () => {
               
             <div className='grid lgs:grid-cols-7 items-center justify-center'>
             {devtools.slice(0, 7).map((tools, index) => (
-                <div key={index} className="flex flex-col items-center justify-center m-4">
+                <div key={index} className="flex flex-col items-center justify-center m-4" data-aos='fade-up' data-aos-delay='400'>
                   <img src={tools.path} alt={`${tools.name} icon`} className="lgs:w-12 lgs:h-12 mds:h-6 mds:w-6 object-cover" />
                 </div>
             ))}
@@ -150,7 +150,7 @@ const Skills = () => {
          </div>
          <div className='grid lgs:grid-cols-7 items-center justify-center'>
                    {devtools.slice(7, 14).map((tools, index) => (
-                       <div key={index} className="flex flex-col items-center justify-center m-4">
+                       <div key={index} className="flex flex-col items-center justify-center m-4" data-aos='fade-up' data-aos-delay='450'>
                          <img src={tools.path} alt={`${tools.name} icon`} className="lgs:w-12 lgs:h-12 mds:h-6 mds:w-6 object-cover" />
                        </div>
                    ))}
@@ -158,7 +158,7 @@ const Skills = () => {
              </div>
              <div className='grid lgs:grid-cols-7 items-center justify-center'>
                    {devtools.slice(14, 21).map((tools, index) => (
-                       <div key={index} className="flex flex-col items-center justify-center m-4">
+                       <div key={index} className="flex flex-col items-center justify-center m-4" data-aos='fade-up' data-aos-delay='500'>
                          <img src={tools.path} alt={`${tools.name} icon`} className="lgs:w-12 lgs:h-12 mds:h-6 mds:w-6 object-cover" />
                        </div>
                    ))}
@@ -205,7 +205,7 @@ const Skills = () => {
               
             <div className='grid grid-cols-3 items-center justify-center'>
             {devtools.slice(0, 21).map((tools, index) => (
-                <div key={index} className="flex flex-col items-center justify-center m-4">
+                <div key={index} className="flex flex-col items-center justify-center m-4" data-aos='fade-up' data-aos-delay='400'>
                   <img src={tools.path} alt={`${tools.name} icon`} className="mds:w-12 mds:h-12 sms:h-12 sms:w-12 object-cover" />
                 </div>
             ))}
@@ -279,7 +279,7 @@ const Skills = () => {
       )}
 
         <div className='flex h-auto lgs:w-[20vw] w-full items-center justify-center sms:mt-4'>
-        <p className='font-dmsans text-primary text-center lgs:text-md text-xl mds:w-[75vw] lgs:w-[15vw] sms:w-[80vw]'>
+        <p className='font-dmsans text-primary text-center lgs:text-md text-xl mds:w-[75vw] lgs:w-[15vw] sms:w-[80vw]' data-aos='fade-left' data-aos-delay='400'>
              I use a range of technologies to build scalable and user-friendly applications. On the frontend, I work with React, Next.js, and Flutter, while leveraging Node.js, Express, and MongoDB for backend development. I also utilize Tailwind CSS and Bootstrap for responsive, clean designs, ensuring high performance and seamless user experiences.
             </p>
 
