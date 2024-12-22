@@ -12,6 +12,9 @@ import contactMe from '../assests/contactMeImage.png';
 import { faConnectdevelop, faReadme } from '@fortawesome/free-brands-svg-icons';
 import { useEffect } from 'react';
 
+//cv doc
+import cv from '../assests/Doc/Osanda MuthukumaranasCV.pdf';
+
 
 const AboutMe = () => {
 
@@ -60,12 +63,15 @@ const AboutMe = () => {
                  <img src= {myResume} alt='' className='object-cover lgs:scale-75 sms:scale-75 mds:scale-50 '/>
               </div>
               <div className='absolute flex h-auto w-auto z-40 items-center justify-center'>
-                 <button className='flex bg-yellow-400 rounded-full lgs:w-[10rem] sms:w-[6rem] sms:h-[3rem] mds:w-[10rem] mds:h-[3rem] items-center justify-center lgs:h-[3rem] lgs:mt-24 lgs:ml-12 sms:mt-24 mds:mt-24'
+                 <button className='flex bg-yellow-400 rounded-full lgs:w-[10rem] sms:w-[6rem] sms:h-[3rem] mds:w-[10rem] mds:h-[3rem] scale-100 items-center justify-center lgs:h-[3rem] lgs:mt-24 lgs:ml-12 sms:mt-24 mds:mt-24 hover:w-[10rem] hover:bg-yellow-500 hover:shadow-lg transform transform-all duration-300 ease-out'
                  style={{
                       boxShadow:'inset 0px 5px 10px rgba(0,0,0,0.8) , 0px 5px 10px rgba(0,0,0,0.8)'
                  }} data-aos='zoom-in' data-aos-delay='400'>
                       <FontAwesomeIcon icon= {faReadme} className='lgs:h-8' />
                  </button>
+               <a href={cv} download="OsandaMuthukumaranaCV.pdf" className='absolute inset-0 z-50'>
+                <span className='sr-only'>Download CV</span>
+               </a>
               </div>
           </div>
           <div className='flex  h-auto lgs:w-[20vw] items-center justify-center lgs:mt-48 mds:mt-48 sms:mt-40'>

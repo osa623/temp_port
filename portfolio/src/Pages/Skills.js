@@ -4,7 +4,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import lowerBackground1 from '../assests/lowerBackground1.png';
 
 //Dev-tools image files
-
 import html from '../assests/devtools/html.png';
 import css from '../assests/devtools/css.png';
 import java from '../assests/devtools/java.png';
@@ -26,7 +25,6 @@ import androidstudio from '../assests/devtools/android.png';
 import aftereffects from '../assests/devtools/after effects.png';
 import adobepp from '../assests/devtools/premiere pro.png';
 import illustrator from '../assests/devtools/illustrator.png';
-//import photoshop from '../assests/devtools/photoshop.png';
 
 
 
@@ -61,6 +59,8 @@ const Skills = () => {
 
   ];
 
+
+  //useEffect for the intersection observer
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -266,6 +266,7 @@ const Skills = () => {
       )}
 
       {/* Section 2: Visible when lightOn is true */}
+
       {lightOn && (
         <div className="hidden sms:flex mds:flex bg-gray-800 h-[5rem] w-[100vw] items-center justify-center">
         <div
