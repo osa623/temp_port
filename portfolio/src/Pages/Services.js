@@ -111,12 +111,15 @@ const services = [
                                                                     <div className='flex lgs:h-[15rem] lgs:w-[18rem] bg-transparent'/>
                                                                     <div className='flex lgs:h-[15rem] lgs:w-[18rem] sms:w-[20rem] sms:h-[20rem] items-center justify-center bg-gradient-to-t from-secondary via-secondary to-transparent'>
 
-                                                                    <div className='flex flex-col h-auto lgs:w-full  rounded-xl items-center cursor-default justify-center mds:space-y-2 sms:space-y-4 sms:mt-24'>
+                                                                    <div className='flex flex-col h-[15rem] lgs:w-full  rounded-xl items-center cursor-default justify-evenly mds:space-y-2 sms:space-y-4 sms:mt-24'>
                                                                             <h2 className='flex flex-col font-russoone lgs:w-[15rem] sms:w-[15rem] lgs:space-y-2 text-center font-thin items-center justify-center text-primary text-2xl sms:text-3xl overflow-hidden'>
                                                                             {tools.name}{''}
                                                                             <div className='bg-yellow-500  w-1/4 h-[0.15rem]  group-hover:w-3/4 transition-all ease-in-out duration-1000'/>
                                                                             </h2>
-                                                                            <h2 className='flex flex-col font-ibmplexsans lgs:w-[15rem] mds:w-[15rem] sms:w-[15rem] lgs:mt-2 text-center text-primary lgs:text-sm sms:text-sm overflow-hidden'>
+                                                                            <h2 className='flex flex-col font-dmsans lgs:w-[15rem] mds:w-[15rem] sms:w-[15rem] lgs:mt-2 text-center text-primary lgs:text-sm sms:text-sm overflow-hidden'
+                                                                            style={{
+                                                                              fontWeight:'200'
+                                                                            }}>
                                                                             {tools.description}
                                                                             </h2>
 
@@ -175,7 +178,10 @@ const services = [
                                                                               {tools.name}{''}
                                                                               <div className='bg-yellow-500  w-1/4 h-[0.15rem]  group-hover:w-3/4 transition-all ease-in-out duration-1000'/>
                                                                               </h2>
-                                                                              <h2 className='flex flex-col font-ibmplexsans lgs:w-[15rem] mds:w-[15rem] sms:w-[15rem] lgs:mt-2 text-center text-primary lgs:text-sm sms:text-sm overflow-hidden'>
+                                                                              <h2 className='flex flex-col font-dmsans lgs:w-[15rem] mds:w-[15rem] sms:w-[15rem] lgs:mt-2 text-center text-primary lgs:text-sm sms:text-sm overflow-hidden'
+                                                                              style={{
+                                                                                fontWeight:'200'
+                                                                              }}>
                                                                               {tools.description}
                                                                               </h2>
 
