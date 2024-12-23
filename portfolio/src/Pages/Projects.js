@@ -50,6 +50,8 @@ const projects01 = [
     buttonBg: "bg-baseprimary",
     buttonBorder: "border-blue-400",
     buttonText: "See More",
+    siteUrl : "",
+    gitUrl : "https://github.com/osa623/Hotel-Booking-System-for-Web-Application"
   },
   {
     id: 2,
@@ -65,7 +67,7 @@ const projects01 = [
     buttonBorder: "border-pink-400",
     buttonText: "See More",
     siteUrl : "https://www.baoswheels.com",
-    gitUrl : "https://github.com/osa623"
+    gitUrl : "https://github.com/osa623/Baos_wheels_Web_Application"
   },
   {
     id: 3,
@@ -79,6 +81,8 @@ const projects01 = [
     buttonBg: "bg-orange-600",
     buttonBorder: "border-orange-400",
     buttonText: "See More",
+    siteUrl : "",
+    gitUrl : "https://github.com/osa623/PIxel-Plaza-Online-Shopping-Web"
   },
   {
     id: 4,
@@ -92,6 +96,8 @@ const projects01 = [
     buttonBg: "bg-blue-600",
     buttonBorder: "border-blue-400",
     buttonText: "See More",
+    siteUrl : "",
+    gitUrl : "https://github.com/osa623/CSSE-Smart_HealthCare_System-SE_S1_WD_09"
   },
 ];
 
@@ -109,6 +115,8 @@ const projects02 = [
       buttonBg: "bg-blue-900",
       buttonBorder: "border-blue-600",
       buttonText: "See More",
+      siteUrl : "",
+      gitUrl : "https://github.com/osa623/Job-Portal-Web-Application"
     },
     {
       id: 2,
@@ -122,6 +130,8 @@ const projects02 = [
       buttonBg: "bg-green-800",
       buttonBorder: "border-green-400",
       buttonText: "See More",
+      siteUrl : "",
+      gitUrl : "https://github.com/osa623/Fitness-Master-Web-Application"
     },
     {
       id: 3,
@@ -135,6 +145,8 @@ const projects02 = [
       buttonBg: "bg-gray-800",
       buttonBorder: "border-gray-400",
       buttonText: "See More",
+      siteUrl : "",
+      gitUrl : "https://github.com/osa623/PathFinder-Mobile-Application"
     },
     {
       id: 4,
@@ -148,6 +160,8 @@ const projects02 = [
       buttonBg: "bg-purple-900 ",
       buttonBorder: "border-purple-400",
       buttonText: "See More",
+      siteUrl : "",
+      gitUrl : "https://github.com/osa623/Mobile-Application-Payment-Planner"
     },
   ];
 

@@ -99,7 +99,7 @@ const services = [
                                                     <div className='flex lgs:w-[18rem] lgs:h-[20rem] mds:w-[20rem]'>
 
                                                         <div className='flex w-auto h-auto z-20 lgs:h-[20rem] mds:w-[20rem]'>
-                                                            <img src= {tools.image} alt='' className='object-cover'/>
+                                                            <img src= {tools.image} alt='' className='object-cover group-hover:scale-125 transfrom transform-all duration-300 ease-in-out'/>
                                                         </div>
 
                                                         <div className='absolute lgs:h-[20rem] mds:w-[20rem] mds:h-[20rem] sms:w-[20rem] sms:h-[20rem]  bg-gradient-to-t from-black via-transparent to-transparent flex items-center justify-center lgs:w-[20rem]  z-30'/>
