@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import lowerBackground1 from '../assests/lowerBackground1.png';
 import myResume from '../assests/myResumeImage.png';
 import contactMe from '../assests/contactMeImage.png';
-import { faConnectdevelop, faReadme } from '@fortawesome/free-brands-svg-icons';
+import { faConnectdevelop} from '@fortawesome/free-brands-svg-icons';
 import { useEffect } from 'react';
 
 //cv doc

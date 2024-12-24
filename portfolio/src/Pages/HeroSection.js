@@ -115,7 +115,7 @@ const HeroSection = () => {
                       <div className='hidden absolute lgs:flex z-50 bg-transparent lgs:items-center lgs:justify-center lgs:w-full lgs:h-[30rem] lgs:mt-24'>
                           <div className='flex lgs:w-[100vw] lgs:h-[50rem] sms:w-[100vw] sms:h-[20rem] items-center justify-end'>
                               <div className='flex flex-col lgs:h-[20rem] lgs:space-y-0.5 bg-transparent lgs:w-[5rem]'>
-                                <Link className='flex lgs:h-[5rem] lgs:w-[5rem] bg-gray-800 rounded-l-xl lgs:items-center lgs:justify-center hover:cursor-pointer' style={{
+                                <Link to={'h'} className='flex lgs:h-[5rem] lgs:w-[5rem] bg-gray-800 rounded-l-xl lgs:items-center lgs:justify-center hover:cursor-pointer' style={{
                                    boxShadow: "1px 5px 5px rgba(0,0,0,0.7) , inset 0px 5px 5px rgba(255,255,255,0.4)"
                                 }}><FontAwesomeIcon icon={faFacebook} className='text-primary lgs:h-8 hover:h-10 sms:h-8 transfrom transform-all duration-300 ease-out' />
                                 </Link>
