@@ -14,6 +14,7 @@ import { useEffect } from 'react';
 
 //cv doc
 import cv from '../assests/Doc/Osanda MuthukumaranasCV.pdf';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 
 const AboutMe = () => {
@@ -42,7 +43,7 @@ const AboutMe = () => {
         </div>
 
         <div className='flex h-auto lgs:w-[5vw] sms:w-[75vw] mds:w-[75vw] mds:h-1 sms:h-1 justify-center items-center'>
-            <div className='flex bg-primary w-0.5 sms:w-[20rem] mds:w-[20rem] h-3/4'/>
+            <div className='flex bg-primary w-0.5 sms:w-[20rem] mds:w-[20rem] h-3/4' data-aos='zoom-in' data-aos-delay='350'/>
         </div>
                 
         <div className='flex h-auto lgs:w-[50vw] sms:w-[90vw] items-center justify-center mds:mt-6'>
@@ -52,7 +53,7 @@ const AboutMe = () => {
         </div>
 
         <div className='flex h-auto lgs:w-[5vw] sms:w-[75vw] mds:w-[75vw] mds:mt-6 mds:h-1 sms:h-1 justify-center items-center'>
-            <div className='flex bg-primary w-0.5 sms:w-[20rem] mds:w-[20rem] h-3/4'/>
+            <div className='flex bg-primary w-0.5 sms:w-[20rem] mds:w-[20rem] h-3/4' data-aos='zoom-in' data-aos-delay='350'/>
         </div>
 
         
@@ -62,17 +63,15 @@ const AboutMe = () => {
               <div className='absolute flex h-auto w-auto z-30 items-center justify-center' data-aos='zoom-in' data-aos-delay='400'>
                  <img src= {myResume} alt='' className='object-cover lgs:scale-75 sms:scale-75 mds:scale-50 '/>
               </div>
-              <div className='absolute flex h-auto w-auto z-50 items-center justify-center'>
-              <button 
-  className='flex bg-yellow-400 rounded-full lgs:w-[10rem] sms:w-[6rem] sms:h-[3rem] mds:w-[10rem] mds:h-[3rem] scale-100 items-center justify-center lgs:h-[3rem] lgs:mt-24 lgs:ml-12 sms:mt-24 mds:mt-24 hover:w-[10rem] hover:bg-yellow-800 hover:shadow-lg transform-all duration-300 ease-out active:scale-95 active:shadow-inner'
-  style={{
-    boxShadow: 'inset 0px 5px 10px rgba(0,0,0,0.8), 0px 5px 10px rgba(0,0,0,0.8)'
-  }} 
-  data-aos='zoom-in' 
-  data-aos-delay='400'
->
-  <FontAwesomeIcon icon={faReadme} className='lgs:h-8' />
-</button>
+              <div className='absolute flex h-auto w-auto z-40 items-center justify-center'>
+              <button
+          
+              className= "mt-10 px-6 py-3 text-white bg-yellow-600 hover:bg-gray-800 rounded-lg lgs:mt-20 mds:mt-20"
+            style={{
+              boxShadow: "0px 5px 20px rgba(0,0,0,0.7) , inset 0px 5px 5px rgba(255,255,255,0.7)",
+            }}>
+                <FontAwesomeIcon icon= {faFile} className='lgs:h-8 text-gray-900' />
+            </button>
 
                <a href={cv} download="OsandaMuthukumaranaCV.pdf" className='absolute inset-0 z-50'>
                 <span className='sr-only'>Download CV</span>
@@ -84,12 +83,14 @@ const AboutMe = () => {
                  <img src= {contactMe} alt='' className='object-cover lgs:scale-75 sms:scale-75 mds:scale-50'/>
               </div>
               <div className='absolute flex h-auto w-auto z-40 items-center justify-center'>
-                 <button className='flex bg-green-500 rounded-full drop-shadow-lg lgs:w-[10rem] sms:w-[6rem] sms:h-[3rem]  mds:w-[10rem] mds:h-[3rem] items-center justify-center lgs:h-[3rem] lgs:mt-24 lgs:mr-12 sms:mt-24 mds:mt-24'
-                    style={{
-                      boxShadow:'inset 0px 5px 10px rgba(0,0,0,0.8) , 0px 5px 10px rgba(0,0,0,0.8)'
-                    }} data-aos='zoom-in' data-aos-delay='400'>
-                      <FontAwesomeIcon icon= {faConnectdevelop} className='lgs:h-8' />
-                 </button>
+              <button
+          
+                className= "group mt-10 px-6 py-3 text-white bg-green-600 hover:bg-green-800 rounded-lg lgs:mt-20 mds:mt-20"
+              style={{
+                boxShadow: "0px 5px 20px rgba(0,0,0,0.7) , inset 0px 5px 5px rgba(255,255,255,0.6)",
+              }}>
+                  <FontAwesomeIcon icon= {faConnectdevelop} className='lgs:h-8 text-secondary group-hover:text-primary' />
+              </button>
               </div>
           </div>
             

@@ -132,7 +132,7 @@ const Skills = () => {
         </div>
 
         <div className='flex h-auto lgs:w-[5vw] justify-center items-center'>
-            <div className='flex bg-primary w-0.5 h-3/4'/>
+            <div className='flex bg-primary w-0.5 h-3/4' data-aos='zoom-in' data-aos-delay='350'/>
         </div>
 
 
@@ -230,27 +230,10 @@ const Skills = () => {
 
           )}
          
-
-         {/* <div className='grid lgs:grid-cols-3 items-center justify-center'>
-                {devtools.slice(3, 6).map((tools, index) => (
-                    <div key={index} className="flex flex-col items-center justify-center m-4">
-                      <img src={tools.path} alt={`${tools.name} icon`} className="w-12 h-12" />
-                    </div>
-                ))}
-
-          </div>
-          <div className='grid lgs:grid-cols-3 items-center w-full justify-center'>
-                {devtools.slice(6, 10).map((tools, index) => (
-                    <div key={index} className="flex flex-col items-center justify-center m-4">
-                      <img src={tools.path} alt={`${tools.name} icon`} className="w-12 h-12" />
-                    </div>
-                ))}
-
-          </div>*/}
         </div>
 
         <div className='hidden lgs:flex mds:flex h-auto lgs:w-[5vw] mds:w-[80vw] justify-center items-center'>
-            <div className='flex bg-primary w-0.5 h-3/4'/>
+            <div className='flex bg-primary w-0.5 h-3/4' data-aos='zoom-in' data-aos-delay='350'/>
         </div>
 
         {!lightOn && (
